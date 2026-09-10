@@ -1,11 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="MetaUSI">
-  <rect width="64" height="64" rx="12" fill="#05070a"/>
-  <rect x="8" y="8" width="48" height="48" rx="8" fill="url(#g)"/>
-  <defs>
-    <linearGradient id="g" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#22d3ee"/>
-      <stop offset="1" stop-color="#0891b2"/>
-    </linearGradient>
-  </defs>
-  <path d="M18 44V20h5.4l7.2 14.6L38 20h5.4v24h-4.6V27.6L32.2 44h-3.4L22.6 27.6V44H18z" fill="#05070a"/>
+  <rect width="64" height="64" rx="14" fill="#111111"/>
+  <path d="M18 44V20h5.2l7.1 14.4L37.4 20H42.6v24h-4.4V28.2L31.8 44h-3.2L22.4 28.2V44H18z" fill="#FFFFFF"/>
+  <circle cx="50" cy="14" r="5" fill="#0D9488"/>
 </svg>

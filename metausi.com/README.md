@@ -1,6 +1,6 @@
 # MetaUSI — metausi.com
 
-Static portfolio for MetaUSI / Manuel (Shanghai). Dark tech/product aesthetic — electric cyan on near-black. Mobile-first, no build step.
+Static portfolio for MetaUSI / Manuel (Shanghai). Light marketing landing — white surfaces, black headings, soft gray body, soft teal accents, pill CTAs. Layout rhythm inspired by modern product marketing sites (section hierarchy only; MetaUSI branding only). Mobile-first, no build step.
 
 ## Local run
 
