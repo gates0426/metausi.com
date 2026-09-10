@@ -3,6 +3,7 @@
    Soft teal accent · pill controls · x.ai/bot-style section rhythm */
 
 :root {
+  color-scheme: light only;
   --bg: #ffffff;
   --bg-soft: #f6f7f8;
   --bg-block: #f3f4f6;
