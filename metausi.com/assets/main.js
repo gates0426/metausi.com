@@ -44,4 +44,52 @@
       }
     });
   }
+
+  /* Staggered scroll reveal — no libraries */
+  var reduceMotion =
+    window.matchMedia &&
+    window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  var reveals = document.querySelectorAll("[data-reveal]");
+  if (reduceMotion) {
+    reveals.forEach(function (el) {
+      el.classList.add("is-visible");
+    });
+  } else if ("IntersectionObserver" in window) {
+    var delayStep = 70;
+    var groups = {};
+
+    reveals.forEach(function (el) {
+      var section = el.closest("section") || document.body;
+      var key = section.id || "root";
+      if (!groups[key]) groups[key] = [];
+      groups[key].push(el);
+    });
+
+    Object.keys(groups).forEach(function (key) {
+      groups[key].forEach(function (el, i) {
+        el.style.setProperty("--reveal-delay", i * delayStep + "ms");
+      });
+    });
+
+    var observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { rootMargin: "0px 0px -8% 0px", threshold: 0.12 }
+    );
+
+    reveals.forEach(function (el) {
+      observer.observe(el);
+    });
+  } else {
+    reveals.forEach(function (el) {
+      el.classList.add("is-visible");
+    });
+  }
 })();

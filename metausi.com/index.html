@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MetaUSI — Design &amp; Product, Shanghai</title>
-  <meta name="description" content="MetaUSI is the studio of Manuel in Shanghai — thoughtful product design, digital experiences, and creative direction." />
+  <title>MetaUSI — Product Design &amp; Systems, Shanghai</title>
+  <meta name="description" content="MetaUSI is Manuel’s product practice in Shanghai — interface systems, digital products, and precise visual craft." />
   <meta name="author" content="Manuel / MetaUSI" />
-  <meta name="theme-color" content="#0c0c0e" />
+  <meta name="theme-color" content="#05070a" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.metausi.com/" />
-  <meta property="og:title" content="MetaUSI — Design &amp; Product, Shanghai" />
-  <meta property="og:description" content="Thoughtful product design, digital experiences, and creative direction from Shanghai." />
+  <meta property="og:title" content="MetaUSI — Product Design &amp; Systems, Shanghai" />
+  <meta property="og:description" content="Interface systems, digital products, and precise visual craft from Shanghai." />
   <meta property="og:site_name" content="MetaUSI" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:image" content="https://www.metausi.com/assets/og.png" />
@@ -21,8 +21,8 @@
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="MetaUSI — Design &amp; Product, Shanghai" />
-  <meta name="twitter:description" content="Thoughtful product design, digital experiences, and creative direction from Shanghai." />
+  <meta name="twitter:title" content="MetaUSI — Product Design &amp; Systems, Shanghai" />
+  <meta name="twitter:description" content="Interface systems, digital products, and precise visual craft from Shanghai." />
   <meta name="twitter:image" content="https://www.metausi.com/assets/og.png" />
 
   <link rel="canonical" href="https://www.metausi.com/" />
@@ -31,11 +31,14 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="/assets/styles.css" />
 </head>
 <body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-noise" aria-hidden="true"></div>
+
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header" role="banner">
@@ -52,7 +55,7 @@
         <ul id="nav-menu" class="nav-list">
           <li><a href="#about">About</a></li>
           <li><a href="#work">Work</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a class="nav-cta" href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -61,55 +64,76 @@
   <main id="main">
     <section class="hero" aria-labelledby="hero-title">
       <div class="container hero-inner">
-        <p class="eyebrow">Shanghai · Studio</p>
-        <h1 id="hero-title" class="hero-title">
-          <span class="hero-brand">MetaUSI</span>
-          <span class="hero-line">Design that feels</span>
-          <span class="hero-line accent">considered.</span>
-        </h1>
-        <p class="hero-lede">
-          A focused practice for product design, brand, and digital experiences —
-          built with clarity, craft, and calm intention.
+        <p class="eyebrow reveal" data-reveal>
+          <span class="eyebrow-dot" aria-hidden="true"></span>
+          Shanghai · Product practice
         </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#work">View work</a>
-          <a class="btn btn-ghost" href="mailto:hello@metausi.com">Say hello</a>
+        <h1 id="hero-title" class="hero-title">
+          <span class="hero-brand reveal" data-reveal>MetaUSI</span>
+          <span class="hero-line reveal" data-reveal>Interfaces built for</span>
+          <span class="hero-line accent reveal" data-reveal>clarity at scale.</span>
+        </h1>
+        <p class="hero-lede reveal" data-reveal>
+          A product design practice for systems, digital experiences, and
+          high-contrast craft — from Shanghai to wherever the product ships.
+        </p>
+        <div class="hero-actions reveal" data-reveal>
+          <a class="btn btn-primary" href="#work">Explore work</a>
+          <a class="btn btn-ghost" href="mailto:hello@metausi.com">
+            <span class="btn-icon" aria-hidden="true">↗</span>
+            hello@metausi.com
+          </a>
         </div>
+        <dl class="hero-stats reveal" data-reveal>
+          <div>
+            <dt>Focus</dt>
+            <dd>Product UI · Systems</dd>
+          </div>
+          <div>
+            <dt>Base</dt>
+            <dd>Shanghai</dd>
+          </div>
+          <div>
+            <dt>Status</dt>
+            <dd><span class="status-dot" aria-hidden="true"></span> Open</dd>
+          </div>
+        </dl>
       </div>
-      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-orb" aria-hidden="true"></div>
+      <div class="hero-frame" aria-hidden="true"></div>
     </section>
 
     <section id="about" class="section about" aria-labelledby="about-title">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head reveal" data-reveal>
           <p class="eyebrow">About</p>
-          <h2 id="about-title">Manuel, based in Shanghai</h2>
+          <h2 id="about-title">Manuel — product designer, Shanghai</h2>
         </div>
         <div class="about-grid">
-          <div class="about-copy">
+          <div class="about-copy reveal" data-reveal>
             <p>
-              MetaUSI is the studio of <strong>Manuel</strong> — a designer and
-              maker working from Shanghai. The work sits at the intersection of
-              product thinking, visual systems, and human-centered interfaces.
+              MetaUSI is the studio of <strong>Manuel</strong>. Work sits at the
+              intersection of product thinking, interface systems, and precise
+              visual execution — designed for real users and shipping timelines.
             </p>
             <p>
-              Currently shaping a new body of work. This site is a quiet
-              placeholder while projects move from sketch to ship. If you’re
-              building something thoughtful, I’d love to hear from you.
+              New case studies are in progress. This site is a live shell while
+              projects move from prototype to production. If you’re building a
+              product that needs sharper UX and stronger systems, get in touch.
             </p>
           </div>
-          <dl class="about-meta">
+          <dl class="about-meta reveal" data-reveal>
             <div>
               <dt>Location</dt>
               <dd>Shanghai, China</dd>
             </div>
             <div>
-              <dt>Focus</dt>
-              <dd>Product · Brand · Digital</dd>
+              <dt>Capabilities</dt>
+              <dd>Product · Systems · Digital</dd>
             </div>
             <div>
-              <dt>Status</dt>
-              <dd><span class="status-dot" aria-hidden="true"></span> Open to select collaborations</dd>
+              <dt>Collaborations</dt>
+              <dd><span class="status-dot" aria-hidden="true"></span> Select partnerships</dd>
             </div>
           </dl>
         </div>
@@ -118,59 +142,78 @@
 
     <section id="work" class="section work" aria-labelledby="work-title">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head reveal" data-reveal>
           <p class="eyebrow">Selected work</p>
-          <h2 id="work-title">Coming soon</h2>
+          <h2 id="work-title">Pipeline — shipping soon</h2>
           <p class="section-desc">
-            Case studies are in progress. A few placeholders for what’s on the way.
+            Placeholders for work in progress. Case studies will land here with
+            process, systems, and outcomes — no filler projects invented yet.
           </p>
         </div>
         <ul class="work-grid">
-          <li class="work-card">
+          <li class="work-card reveal" data-reveal>
             <article>
-              <span class="work-tag">Product</span>
+              <div class="work-card-top">
+                <span class="work-tag">Product</span>
+                <span class="work-index" aria-hidden="true">01</span>
+              </div>
               <h3>Interface systems</h3>
-              <p>Design systems and product UI for early-stage teams.</p>
+              <p>Design systems and product UI for early-stage and growth teams.</p>
               <span class="work-status">Coming soon</span>
             </article>
           </li>
-          <li class="work-card">
+          <li class="work-card reveal" data-reveal>
             <article>
-              <span class="work-tag">Brand</span>
-              <h3>Identity &amp; tone</h3>
-              <p>Quiet visual identities with lasting typographic character.</p>
+              <div class="work-card-top">
+                <span class="work-tag">Brand</span>
+                <span class="work-index" aria-hidden="true">02</span>
+              </div>
+              <h3>Identity systems</h3>
+              <p>Tight visual languages with typographic and component rigor.</p>
               <span class="work-status">Coming soon</span>
             </article>
           </li>
-          <li class="work-card">
+          <li class="work-card reveal" data-reveal>
             <article>
-              <span class="work-tag">Digital</span>
-              <h3>Web experiences</h3>
-              <p>Marketing and portfolio sites with careful motion and detail.</p>
+              <div class="work-card-top">
+                <span class="work-tag">Digital</span>
+                <span class="work-index" aria-hidden="true">03</span>
+              </div>
+              <h3>Product surfaces</h3>
+              <p>Marketing and product web with motion that stays performant.</p>
               <span class="work-status">Coming soon</span>
             </article>
           </li>
-          <li class="work-card">
+          <li class="work-card reveal" data-reveal>
             <article>
-              <span class="work-tag">Research</span>
-              <h3>Explorations</h3>
-              <p>Prototypes and speculative work in interaction and craft.</p>
+              <div class="work-card-top">
+                <span class="work-tag">Research</span>
+                <span class="work-index" aria-hidden="true">04</span>
+              </div>
+              <h3>Interaction R&amp;D</h3>
+              <p>Prototypes exploring interaction patterns and craft details.</p>
               <span class="work-status">Coming soon</span>
             </article>
           </li>
-          <li class="work-card">
+          <li class="work-card reveal" data-reveal>
             <article>
-              <span class="work-tag">Collab</span>
-              <h3>Studio partners</h3>
-              <p>Select collaborations with founders and creative teams.</p>
+              <div class="work-card-top">
+                <span class="work-tag">Collab</span>
+                <span class="work-index" aria-hidden="true">05</span>
+              </div>
+              <h3>Founder partnerships</h3>
+              <p>Select collaborations with product teams and creative leads.</p>
               <span class="work-status">Coming soon</span>
             </article>
           </li>
-          <li class="work-card">
+          <li class="work-card reveal" data-reveal>
             <article>
-              <span class="work-tag">Archive</span>
-              <h3>Past highlights</h3>
-              <p>A curated look at earlier shipped work — landing soon.</p>
+              <div class="work-card-top">
+                <span class="work-tag">Archive</span>
+                <span class="work-index" aria-hidden="true">06</span>
+              </div>
+              <h3>Shipped highlights</h3>
+              <p>A curated look at earlier production work — landing soon.</p>
               <span class="work-status">Coming soon</span>
             </article>
           </li>
@@ -179,18 +222,19 @@
     </section>
 
     <section id="contact" class="section contact" aria-labelledby="contact-title">
-      <div class="container contact-inner">
+      <div class="container contact-inner reveal" data-reveal>
         <div class="section-head">
           <p class="eyebrow">Contact</p>
-          <h2 id="contact-title">Let’s talk</h2>
+          <h2 id="contact-title">Build something sharp</h2>
           <p class="section-desc">
-            Projects, partnerships, or a simple hello — reach out anytime.
+            Product briefs, systems work, or a quick intro — email is best.
           </p>
         </div>
         <a class="contact-email" href="mailto:hello@metausi.com">
           hello@metausi.com
+          <span class="contact-arrow" aria-hidden="true">→</span>
         </a>
-        <p class="contact-note">Prefer email. Replies usually within a few days.</p>
+        <p class="contact-note">Prefer email. Typical reply within a few days.</p>
       </div>
     </section>
   </main>

@@ -1,6 +1,6 @@
 # MetaUSI — metausi.com
 
-Static portfolio for MetaUSI / Manuel (Shanghai). Dark, minimal, mobile-first.
+Static portfolio for MetaUSI / Manuel (Shanghai). Dark tech/product aesthetic — electric cyan on near-black. Mobile-first, no build step.
 
 ## Local run
 
@@ -8,13 +8,13 @@ Static portfolio for MetaUSI / Manuel (Shanghai). Dark, minimal, mobile-first.
 python3 -m http.server 5173 --directory .
 ```
 
-Open http://localhost:5173 — no build step; HTML/CSS/JS are the production output.
+Open http://localhost:5173 — HTML/CSS/JS are the production output.
 
 ## Deploy on Vercel
 
-1. Push this repo to GitHub (gates0426/metausi.com).
+1. Push this repo to GitHub (`gates0426/metausi.com`). Site files live under the `metausi.com/` subdirectory in that repo if using the monorepo layout.
 2. Vercel → Add New Project → import the repo.
-3. Framework Preset: Other. Build Command: empty. Output Directory: `.` (root).
+3. Framework Preset: Other. Build Command: empty. Output Directory: `.` (or `metausi.com` if deploying from repo root with subdirectory).
 4. Deploy.
 
 CLI: `npx vercel` then `npx vercel --prod`.
