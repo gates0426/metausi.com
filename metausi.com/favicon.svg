@@ -1,5 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="MetaUSI">
-  <rect width="64" height="64" rx="14" fill="#111111"/>
-  <path d="M18 44V20h5.2l7.1 14.4L37.4 20H42.6v24h-4.4V28.2L31.8 44h-3.2L22.4 28.2V44H18z" fill="#FFFFFF"/>
-  <circle cx="50" cy="14" r="5" fill="#0D9488"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#244bff"/><path d="M14 46V18h7l11 16 11-16h7v28h-8V31L32 45 22 31v15z" fill="white"/></svg>
