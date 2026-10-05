@@ -2,13 +2,19 @@
 
 面向中文阅读的静态个人博客。保留原站 MetaUSI / Manuel、上海和联系邮箱，继续使用 HTML、CSS、JavaScript，无构建依赖。
 
-## 页面
+## 页面（v2 纸上编辑部，2026-10-05）
 
-- index.html：首页、选读、最近文章
-- archive.html：文章归档
+- index.html：首页、卷首语、本期选读、文章索引、笔记速览
+- archive.html：文章归档（按年份的编号索引）
+- notes.html：笔记流（短内容，示例笔记标注为演示内容）
 - about.html：作者介绍和联系
 - posts/：三篇有完整正文的示例文章，页面均明确标注为演示内容
 - 404.html：缺失页面
+
+设计语言：暖纸底色 + 单一蓝色点缀（#244bff），标题衬线 / 正文系统黑体 / 编号日期等宽；
+深色模式由 [data-theme="dark"] 驱动，head 内联脚本在首次绘制前读取 localStorage（无闪烁）；
+文章页带首字下沉、阅读进度条、目录高亮。写新文章时注意同步更新 JSON-LD BlogPosting、
+首页索引、归档、sitemap lastmod；笔记只写 notes.html（不进 feed.xml）。
 
 ## 本地预览
 
