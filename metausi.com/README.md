@@ -29,14 +29,15 @@ python -m http.server 5173
 ## 写新文章
 
 1. 复制 posts/ 下的一篇 HTML，用稳定的英文文件名命名。
-2. 更新标题、description、canonical、OG/Twitter 文案、日期、分类、目录锚点和正文，去掉示例标记。
-3. 在首页和 archive.html 添加文章链接，在 sitemap.xml 添加正式 URL。
+2. 更新标题、description、canonical、OG/Twitter 文案、日期、分类、目录锚点和正文，去掉示例标记；同步更新 `<script type="application/ld+json">` 里 BlogPosting 的 headline、description、datePublished、mainEntityOfPage。
+3. 在首页和 archive.html 添加文章链接，在 sitemap.xml 添加带 lastmod 的正式 URL，在 feed.xml 顶部添加一篇 entry。
 4. 更新上一篇/下一篇链接。
+5. 配图：用 PIL/ffmpeg 生成 768/1200/1536w 的 WebP，参考 index.html 的 `<picture>` + srcset 写法；首屏大图保留 `fetchpriority="high"`，正文配图加 `loading="lazy"`。
 
 所有文章正文在 HTML 内，禁用 JavaScript 仍可阅读和导航。目录高亮只做渐进增强。
 
 ## 资源
 
-assets/editorial.png 为本次生成的 AI 概念静物，用作设计文章配图；未将其当作作者实际作品。assets/og.png 与对应社交图片地址沿用原站资源。图标使用自有字母标记。无第三方字体、追踪器、订阅服务或运行时依赖。
+assets/editorial.png 为本次生成的 AI 概念静物，用作设计文章配图；未将其当作作者实际作品。另有 editorial-768w/1200w/1536w.webp 三档响应式版本（quality 80），页面通过 `<picture>` + srcset 按需加载，原 PNG 仅作旧浏览器兜底。assets/og.png 与对应社交图片地址沿用原站资源。图标使用自有字母标记。无第三方字体、追踪器、订阅服务或运行时依赖。
 
 资源缓存采用重新验证，避免覆盖同名 CSS/JS 后仍显示旧版。
